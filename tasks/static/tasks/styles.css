@@ -1,26 +1,23 @@
 /* Custom styling for the To-Do app */
-body {
-  background: linear-gradient(180deg, #f6f9ff 0%, #ffffff 60%);
-  color: #222;
-}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
 :root{
-  --bg-1: #f4f7ff; /* very light */
-  --bg-2: #f9fef7; /* soft */
-  --primary-600: #3b6bff;
-  --primary-500: #5b84ff;
-  --accent: #23c58f;
+  /* Vibrant palette tokens */
+  --page-bg: linear-gradient(180deg,#f0f6ff 0%, #fff6f2 40%, #fffaf0 100%);
+  --surface: rgba(255,255,255,0.95);
+  --heading: #061030;
   --muted: #6b7280;
-  --card-edge: rgba(59,104,255,0.08);
+
+  --accent-primary: #5b6bff;   /* indigo */
+  --accent-secondary: #ff6b4a; /* coral */
+  --accent-tertiary: #20c5a0;  /* teal */
 }
+
 html,body{height:100%;}
-body {
+body{
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background: radial-gradient(1200px 600px at 5% 10%, rgba(59,104,255,0.06), transparent 8%),
-              radial-gradient(800px 400px at 95% 90%, rgba(35,197,143,0.04), transparent 8%),
-              linear-gradient(180deg, var(--bg-1) 0%, #ffffff 60%);
-  color: #0f1724;
+  background: var(--page-bg);
+  color: var(--heading);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
